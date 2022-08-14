@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* This will make 1rem = 10px */
+}
+
+.main {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+.main__heading {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.sub__header {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: hsl(257, 40%, 49%);
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border-color: #fff;
+}
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: none;
+  transition: 0.5s ease-in;
+}
+.btn:focus {
+  color: #fff;
+  background-color: #c0c0c0;
+}
+.sec__btn {
+  border: 3px solid #c0c0c0;
+  outline: none;
+  color: #c0c0c0;
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  float: right;
+}
+.sec__btn:hover,
+.sec__btn:active {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+.main__elemants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__elements {
+  margin-left: 2rem;
+}
+
+.page__logo {
+  margin-bottom: 2rem;
+}
